@@ -1,0 +1,110 @@
+.testimonials {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.testimonial-card {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    position: relative;
+}
+
+.testimonial-quote {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 100px;
+    color: #ddd;
+    font-family: serif;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.testimonial-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    gap: 15px;
+}
+
+.author-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.author-role {
+    color: #777;
+    font-size: 14px;
+}
+
+.testimonial-avatars {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.avatar.active {
+    opacity: 1;
+    transform: scale(1.1);
+    border: 3px solid #6366f1;
+}
+
+.avatar:hover {
+    opacity: 1;
+}
+
+@media (max-width:768px){
+
+    .section-title{
+        font-size:32px;
+    }
+
+    .testimonial-text{
+        font-size:16px;
+    }
+
+    .testimonial-author{
+        flex-direction:column;
+    }
+
+    .testimonial-card{
+        padding:20px;
+    }
+
+}

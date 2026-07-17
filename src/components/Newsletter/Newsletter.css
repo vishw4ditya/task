@@ -1,0 +1,103 @@
+.newsletter {
+    padding: 80px 0;
+    background: #d1e7dd;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.newsletter-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.newsletter-title {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.newsletter-subtitle {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+    max-width: 500px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.newsletter-form button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 24px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #6366f1;
+}
+
+.newsletter-shape {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 120px;
+    background: #8b5cf6;
+    border-radius: 0 0 0 60px;
+}
+
+@media (max-width: 768px) {
+
+    .newsletter .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-title {
+        font-size: 32px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .newsletter-shape {
+        display: none;
+    }
+}
